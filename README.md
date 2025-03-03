@@ -18,10 +18,10 @@ Para dar vida a esta codificacion utilizamos 2 listas una para guardar a los ami
    
 ### :hammer:Funciones tecnicas del proyecto:
 Se crearon distintas funciones tanto para validacion como para asegurar la correcta funcionalidad del juego. tales como:
-1. `limpiar campo amigos`: limpiar campo de ingreso de amigos
+1. `limpiar campo amigos`: limpiar campo de ingreso de amigos. sta accion es transparente para el usuario.
 2. `Agregar amigos a sortear`: agregar amigo, en esta funcion se valida el ingreso de un amigo valido, y adicionalmente se valida que se ingrese al mismo amigo 2 veces
-3. `Desplegar la lista de amigos y amigo secreto sorteado en pantalla`: Desplegar la lista de los amigos ingresados en pantalla y ademas el amigo secreto sorteado
-4. `Sortear amigos`: En esta funcion se escoge un amigo al azar, y valida que una vez se escojan a todos los amigos inscritos en la lista se reinicia el juego.
-5. `Guardar amigos sorteados`: se agregan los amigos escogidos en una lista para evitar que se asignen 2 veces al mismo amigo
-6. `reiniciar Juego`: En esta funcion se limpian las listas y pantalla para volver a jugar e ingresar nuevos amigos
+3. `Desplegar la lista de amigos y amigo secreto sorteado en pantalla`: Desplegar la lista de los amigos ingresados en pantalla y ademas el amigo secreto sorteado una vez se vayan ingresando y/o sea sorteado el amigo.
+4. `Sortear amigos`: En esta funcion, una vez el usuario presiona el boton Sortear, automaticamente el sistema escoge un amigo desde la lista ingresada, el sistema internamente valida que una vez se escojan a todos los amigos inscritos en la lista se reinicia el juego.
+5. `Guardar amigos sorteados`: En esta funcion el sistema agrega en una lista los amigos escogidos y adicionalmente valida internamente que el amigo no se encuentre ya ingresado en esta lista, lo anterior para evitar que se asignen 2 veces al mismo amigo.
+6. `reiniciar Juego`: Esta funcion se ejecuta una vez que se sortean todos los amigos disponibles que no se hallan seleccionado o sorteados, una vez sorteados se limpian las listas y la pantalla para volver a jugar e ingresar nuevos amigos. Esta accion es transparente para el usuario.
    
